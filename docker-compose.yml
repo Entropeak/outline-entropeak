@@ -12,6 +12,8 @@ services:
       - redis
     environment:
       - production-ssl-disabled=${PRODUCTION_SSL_DISABLED}
+      - FORCE_HTTPS=${FORCE_HTTPS}
+      - COLLABORATION_URL=${COLLABORATION_URL}
 
   redis:
     image: redis
