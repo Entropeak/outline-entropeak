@@ -2,7 +2,7 @@ version: "3"
 services:
 
   outline:
-    image: outlinewiki/outline:0.66.0
+    image: outlinewiki/outline:0.67.1
     command: ${OUTLINE_START_COMMAND}
     env_file: ./outline.env
     ports:
@@ -10,7 +10,6 @@ services:
     depends_on:
       - postgres
       - redis
-      - storage
     environment:
       - production-ssl-disabled=${PRODUCTION_SSL_DISABLED}
 
