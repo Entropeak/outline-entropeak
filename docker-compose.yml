@@ -2,7 +2,7 @@ version: "3"
 services:
 
   outline:
-    image: outlinewiki/outline:0.70.2
+    image: outlinewiki/outline:0.73.0
     command: ${OUTLINE_START_COMMAND}
     env_file: ./outline.env
     ports:
